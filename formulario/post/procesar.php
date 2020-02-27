@@ -12,5 +12,5 @@
     $anno = $_POST['anno'];
     $terminos = $_POST['terminos'];
     echo "<br />";
-    echo "Hola, tu nombre es: " . $nombre . " eres " . $sexo . ", naciste en el año " . $anno
+    echo "Hola, tu nombre es: " . $nombre . " eres " . $sexo . ", naciste en el año " . $anno;
 ?>
