@@ -1,3 +1,13 @@
+<?php
+  
+  if(isset($_POST['enviar'])){
+    $nombre = $_POST['nombre'];
+    $correo = $_POST['correo'];
+    echo "Nombre: " . $nombre . "<br />Correo: " . $correo;
+  }
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,9 +26,9 @@
         <div class="col-sm-10 offset-sm-1 mt-5">
         <div class="card shadow p-3 mb-5 bg-white rounded">
           <div class="card-body">
-            <h3 class="text-center">Formulario GET | Validar metod de envío</h3>
-            
-            <form action="validar_envio.php" method="post">
+            <h3 class="text-center">Formulario GET | Validar datos</h3>
+            <!-- propiedad action enviar a la ruta actual -->
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
               
               <div class="form-group">
                 <label for="nombre">Nombre</label>
