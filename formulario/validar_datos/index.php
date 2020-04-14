@@ -1,11 +1,10 @@
 <?php
-  
+  // La funcion isset determina si una variable está definida y no es NULL
   if(isset($_POST['enviar'])){
     $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
     echo "Nombre: " . $nombre . "<br />Correo: " . $correo;
   }
-
 ?>
 
 <!doctype html>

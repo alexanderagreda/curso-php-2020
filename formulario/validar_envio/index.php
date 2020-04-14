@@ -16,7 +16,7 @@
         <div class="col-sm-10 offset-sm-1 mt-5">
         <div class="card shadow p-3 mb-5 bg-white rounded">
           <div class="card-body">
-            <h3 class="text-center">Formulario GET | Validar metod de envío</h3>
+            <h3 class="text-center">Formulario | Validar metodo de envío</h3>
             
             <form action="validar_envio.php" method="post">
               
