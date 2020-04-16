@@ -1,0 +1,102 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #f2f2f2;
+    font-size: 15px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.wrap{
+    width: 90%;
+    max-width: 540px;
+    margin: auto; /* centrar elemento */
+}
+
+form{
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    overflow: hidden; /* recorta contenido y no mostrar barras de desplazamiento, admite elementos hijos flotantes dentro del contenedor */
+    box-shadow: 0 0 3px grey;
+    border-top: 4px solid #536DFE;
+}
+
+form h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="mail"],
+form input[type="password"],
+form textarea {
+    border: 1px solid #536DFE;
+    border-radius: 2px;
+    padding: 16px;
+    width: 100%;
+    display: block; /* renderizar en lineas independientes */
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #141938;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+/* pseudoclases se añade a los selectores y permiten cambiar el el estilo, aspecto o apariencia en funcion de su estado
+hover=puntero esta encima del elemento */
+form input[type="text"]:hover,
+form input[type="mail"]:hover,
+form input[type="password"]:hover,
+form textarea:hover
+{
+    border: 2px solid #536DFE;
+    padding: 16px;
+}
+
+form textarea
+{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+.alert{
+    padding: 1em;
+    color: #FFF;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert.error{
+    background: #F2DEDE;
+    border: 1px solid #a94442;
+    color: #a94442;
+}
+
+.alert.success{
+    background: #4CAF50;
+}
+
+.btn,form input[type="submit"]{
+    padding: 15px;
+    background: #ED572A;
+    color: #E1F9EA;
+    font-size: 1em;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+    border: none;
+    float: right; /* junto con la propiedad overflow:hidden del contendor de clase wrap, se permite que el elemento flote dentro de este */
+    cursor: pointer; /* muestra como puntero una mano indicando que se puede hacer clic en el elemento */
+}
+
+.btn,form input[type="submit"]:hover{
+    background: #E64A19;
+}
