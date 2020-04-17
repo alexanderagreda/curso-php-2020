@@ -34,7 +34,7 @@ form h1{
 }
 
 form input[type="text"],
-form input[type="mail"],
+form input[type="email"],
 form input[type="password"],
 form textarea {
     border: 1px solid #536DFE;
@@ -51,7 +51,7 @@ form textarea {
 /* pseudoclases se añade a los selectores y permiten cambiar el el estilo, aspecto o apariencia en funcion de su estado
 hover=puntero esta encima del elemento */
 form input[type="text"]:hover,
-form input[type="mail"]:hover,
+form input[type="email"]:hover,
 form input[type="password"]:hover,
 form textarea:hover
 {
