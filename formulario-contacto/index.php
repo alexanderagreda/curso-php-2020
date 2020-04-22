@@ -46,7 +46,7 @@
 
         //Enviar mensaje
         if (!$error) {
-            $destinatario = 'alexanderagreda@gmail.com';
+            $destinatario = 'mail@mail.com';
             $asunto = 'Mensaje enviado desde mi formulario de contacto';
             $contenido = "De: $nombre \n";
             $contenido .= "Correo electronico: $correo \n";
