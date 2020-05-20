@@ -6,11 +6,11 @@
     //Try excepciones
     try {
         //El primer parametro de PDO es el origen de datos DSN, el segundo es el nombre de usuario y el tercero la contraseña de la base de datos
-        $dns = 'mysql:host=localhost;dbname=curso';
+        $dsn = 'mysql:host=localhost;dbname=curso';
         $usuario = 'root';
         $contrasena = 'root';
 
-        $conexion = new PDO($dns,$usuario,$contrasena);
+        $conexion = new PDO($dsn,$usuario,$contrasena);
         echo "¡Conexion establecida correctamente! <br />";
 
         /* CONSULTAS PREPARADAS Prepared Statements */
